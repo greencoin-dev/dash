@@ -128,3 +128,9 @@ std::string CBlock::ToString() const
     s << "\n";
     return s.str();
 }
+
+void CBlock::print() const
+{
+    LogPrintf("%s", ToString());
+}
+}
