@@ -156,7 +156,7 @@ public:
         genesis.nBits    = 0x1e0ffff0;
         genesis.nNonce   = 1;
         hashGenesisBlock = genesis.GetHash();
-        while (hashGenesisBlock > bnProofOfWorkLimit.getuint256()){
+        while (hashGenesisBlock > bnProofOfWorkLimit){
             if (genesis.nNonce == 0)
             {
                 genesis.nTime++;
